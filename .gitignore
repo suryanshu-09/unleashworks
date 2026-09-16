@@ -36,6 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# large media — videos are LinkedIn-embedded, not stored in git
+*.mp4
+*.mov
+*.avi
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

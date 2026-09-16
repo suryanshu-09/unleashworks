@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Contact from "@/components/Contact";
+import FeaturedVideo from "@/components/FeaturedVideo";
 import Insights from "@/components/Insights";
 import Services from "@/components/Services";
 import Story from "@/components/Story";
@@ -194,28 +195,7 @@ export default function Home() {
             title="Hear the perspective behind the practice"
             description="A short introduction to how UNLEASHWORKS thinks about leadership, change and culture."
           />
-          <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl border border-white/10 bg-black shadow-2xl">
-            <video
-              controls
-              preload="metadata"
-              playsInline
-              poster="/pfp.jpeg"
-              className="aspect-video w-full bg-black"
-              aria-label="Introductory video from UNLEASHWORKS"
-            >
-              <source src="/hero-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag. Watch it via{" "}
-              <a
-                href={siteConfig.contact.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline"
-              >
-                LinkedIn
-              </a>{" "}
-              instead.
-            </video>
-          </div>
+          <FeaturedVideo />
         </div>
       </section>
 

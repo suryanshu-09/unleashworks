@@ -190,6 +190,15 @@ export const siteConfig = {
     body: "Whether you're exploring a new idea, navigating change or simply looking for a different perspective, we'd love to hear from you.",
     cta: "Get in Touch",
   },
+  featuredVideo: {
+    // LinkedIn post: "Unconscious Bias in Leadership" (Sep 2026)
+    // Short link shared by founder: https://lnkd.in/p/g6q-pBEj
+    url: "https://www.linkedin.com/posts/nuzhath-ayaz-215b688_leadership-thoughtleadership-executivepresence-activity-7499457997107150848-eEta",
+    shortUrl: "https://lnkd.in/p/g6q-pBEj",
+    embedUrl:
+      "https://www.linkedin.com/embed/feed/update/urn:li:activity:7499457997107150848",
+    title: "Unconscious Bias in Leadership — Nuzhath Ayaz on LinkedIn",
+  },
   verification: {
     email: "Confirmed in guideline.md line 185: nuzhath.ayaz@gmail.com",
     linkedin: "Profile live Sep 2026: Nuzhath Ayaz, UNLEASHWORKS, Greater Bengaluru Area",

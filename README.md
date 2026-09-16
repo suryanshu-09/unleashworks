@@ -34,7 +34,7 @@ Requires Bun ≥ 1.0 (`bun --version`).
 - OpenGraph + Twitter large-image cards using `public/og-image.jpg` (1200×630, generated from `logo.jpeg` on navy).
 - Favicon + Apple touch icon generated from `logo.jpeg` (`app/favicon.ico`, `public/favicon.ico`, `public/apple-touch-icon.png`).
 - `app/sitemap.ts` (`/` + `/services`), `app/robots.ts`, `app/manifest.ts`, JSON-LD `ProfessionalService` schema in layout.
-- Images via `next/image` (AVIF/WebP, `sizes` set, priority only for hero/nav); hero video uses `preload="metadata"` + poster for lighter initial load.
+- Images via `next/image` (AVIF/WebP, `sizes` set, priority only for hero/nav); featured video is LinkedIn-embedded via iframe (`loading="lazy"`), no local video files in git.
 - Mobile-first responsive (single column → `sm:`/`lg:` grids), `overflow-x-hidden` guard, 44px+ mobile menu touch targets, skip-to-content link, visible focus rings.
 
 ## Lighthouse sanity checklist
@@ -44,7 +44,7 @@ bun run build && bun start
 # then in Chrome DevTools → Lighthouse → Mobile + Desktop
 ```
 
-- [ ] Performance: LCP hero image prioritized, video not preloaded eagerly, fonts `display: swap`.
+- [ ] Performance: LCP hero image prioritized, LinkedIn iframe lazy-loaded, fonts `display: swap`.
 - [ ] Accessibility: semantic landmarks, alt text, labels, focus states, colour contrast (gold on navy).
 - [ ] Best practices: HTTPS, no console errors, `poweredByHeader: false`.
 - [ ] SEO: title, description, canonical, OG/Twitter, sitemap + robots reachable (`/sitemap.xml`, `/robots.txt`).
